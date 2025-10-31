@@ -29,6 +29,7 @@ in {
     ./ocaml.nix
     ./php.nix
     ./python.nix
+    ./purescript.nix
     ./r.nix
     ./rust.nix
     ./scala.nix
