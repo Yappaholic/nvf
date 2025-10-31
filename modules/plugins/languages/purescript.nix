@@ -16,7 +16,7 @@
 
   defaultServer = "purescript-language-server";
   servers = {
-    gopls = {
+    purescript-language-server = {
       package = pkgs.nodePackages_latest.purescript-language-server;
       lspConfig = ''
         lspconfig.purescript-language-server.setup {
@@ -67,7 +67,7 @@ in {
 
     (mkIf cfg.lsp.enable {
       vim.lsp.lspconfig.enable = true;
-      vim.lsp.lspconfig.sources.go-lsp = servers.${cfg.lsp.server}.lspConfig;
+      vim.lsp.lspconfig.sources.purescript-language-server = servers.${cfg.lsp.server}.lspConfig;
     })
   ]);
 }
