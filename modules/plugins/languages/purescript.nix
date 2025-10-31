@@ -19,7 +19,7 @@
     purescript-language-server = {
       package = pkgs.nodePackages_latest.purescript-language-server;
       lspConfig = ''
-        lspconfig.purescript-language-server.setup {
+        lspconfig.purescript_language_server.setup {
           capabilities = capabilities;
           on_attach = default_on_attach;
           cmd = ${
